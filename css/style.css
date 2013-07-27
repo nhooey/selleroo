@@ -1,0 +1,10 @@
+#draggable { width: 150px; height: 150px; padding: 0.5em; }
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
