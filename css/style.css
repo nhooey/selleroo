@@ -5,3 +5,11 @@ body {
 .navbar {
   background-color: #404041;
 }
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
