@@ -15,6 +15,4 @@ Person = Backbone.Model.extend({
 var person = new Person;
 person.set({name: "foo"})
 
-$("#tabs").tabs();
-
 });
