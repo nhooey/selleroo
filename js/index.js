@@ -29,16 +29,17 @@ MissionStatuses = Backbone.Collection.extend({
 });
 
 mission_statuses = new MissionStatuses([
-  { name: "Highest [Roo]turn",    rank: 1, days_left: 2  },
-  { name: "Money Maker",          rank: 2, days_left: 2  },
-  { name: "Display Flip",         rank: 3, days_left: 3  },
-  { name: "Varietal Match",       rank: 4, days_left: 6  },
-  { name: "Launch Push",          rank: 5, days_left: 7  },
-  { name: "Objections Overruled", rank: 6, days_left: 12 }
+  { id: 1, name: "Highest [Roo]turn",    rank: 1, days_left: 2  },
+  { id: 2, name: "Money Maker",          rank: 2, days_left: 2  },
+  { id: 3, name: "Display Flip",         rank: 3, days_left: 3  },
+  { id: 4, name: "Varietal Match",       rank: 4, days_left: 6  },
+  { id: 5, name: "Launch Push",          rank: 5, days_left: 7  },
+  { id: 6, name: "Objections Overruled", rank: 6, days_left: 12 }
 ]);
 
 MissionView = Backbone.View.extend({
-  tagName: 'tr',
+  tagName: 'div',
+  className: 'accordion-group',
 
   initialize: function() {
     this.listenTo(this.model, 'change', this.render);
@@ -56,7 +57,7 @@ App = Backbone.View.extend({
   el: $('#main'),
 
   initialize: function() {
-    this.list = $('#mission_list');
+    this.list = $('#accordion');
 
     var that = this;
 
