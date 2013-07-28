@@ -26,3 +26,7 @@ body {
 .navbar-toggle .icon-bar {
   background-color: #FFAE26;
 }
+
+.accordion-heading .accordion-toggle {
+  padding: 2px 15px 20px;
+}
