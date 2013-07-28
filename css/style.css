@@ -3,7 +3,7 @@ body {
 }
 
 .navbar {
-  background-color: #404041;
+  background-color: black;
 }
 
 .navbar-brand {
@@ -12,4 +12,8 @@ body {
 
 .navbar-brand:hover {
   color: white;
+}
+
+.navbar-toggle {
+  left: 10px;
 }
