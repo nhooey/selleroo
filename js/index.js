@@ -5,7 +5,6 @@ Person = Backbone.Model.extend({
     name: 'default'
   },
   initialize: function(){
-    console.log("Welcome to this world");
     this.on("change:name", function(model) {
       console.log("name changed to " + model.get("name"));
     });
@@ -46,7 +45,6 @@ MissionView = Backbone.View.extend({
   },
 
   render: function() {
-    console.log('MissionView.render()');
     var template = _.template( $("#template_mission_status").html(), this.model.toJSON() );
     this.$el.html(template);
     return this;
@@ -58,7 +56,6 @@ App = Backbone.View.extend({
   el: $('#main'),
 
   initialize: function() {
-    console.log('Initializing App...');
     this.list = $('#mission_list');
 
     var that = this;
